@@ -1,0 +1,20 @@
+<?php
+
+declare(strict_types=1);
+
+namespace App\Enum;
+
+enum SecurityEventType: string
+{
+    case LOGIN_SUCCESS = 'LOGIN_SUCCESS';
+    case LOGIN_FAILURE = 'LOGIN_FAILURE';
+    case MFA_ENABLED = 'MFA_ENABLED';
+    case MFA_DISABLED = 'MFA_DISABLED';
+    case MFA_FAILURE = 'MFA_FAILURE';
+    case PASSWORD_CHANGED = 'PASSWORD_CHANGED';
+    case SECRET_CREATED = 'SECRET_CREATED';
+    case SECRET_UPDATED = 'SECRET_UPDATED';
+    case SECRET_DELETED = 'SECRET_DELETED';
+    case SESSION_REVOKED = 'SESSION_REVOKED';
+    case SUSPICIOUS_LOGIN = 'SUSPICIOUS_LOGIN';
+}
